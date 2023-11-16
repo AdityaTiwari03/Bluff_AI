@@ -1,0 +1,17 @@
+Players = [] array of arrays,
+pass = [] (length same as Players)
+choose the 1st player
+CurrCards = [], DiscCards = [], noofCards = [], TypeofCards = []
+4 cards can be executed max 
+During new round pass of all players  will be 0
+every body will have 3 options -
+    Pass, Put, CallBluff
+if CallBluff:
+    Check last noofCards entries of CurrCards, is matching with TypeofCards
+if Put:
+    will be appended in CurrCards
+if anyone said pass atleast 1 time (pass corr to that index = 1) - He cant Put cards anymore.
+After pass = [1,1,1,...]
+    DiscCards += CurrCards
+if len(any entry of Players) == 0:
+    "You Won"
